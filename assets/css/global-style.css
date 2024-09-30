@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+  font-size: 62.5%;
+  --background-blue: #0B131E;
+  --primary-blue: #202B3B;
+  --blue-light: #0095FF;
+  --blue-darker: #2b5878;
+  --p-color: #9399a2;
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--background-blue);
+  color: #FFFFFF;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

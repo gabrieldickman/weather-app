@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./assets/css/global-style.css" />
+    <link rel="stylesheet" href="./assets/css/home-page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <a href="/index.html"><button id="sair">Sair</button></a>
+
+    <div id="loader" class="c-loader"></div>
+    <div class="weather--infos">
+      <div class="input--search">
+        <input
+          type="search"
+          name="search"
+          id="search"
+          placeholder="Buscar cidade..."
+        />
+        <button id="pesquisar">Pesquisar</button>
+      </div>
+
+      <div class="weather--infos--current">
+        <div class="current--informations">
+          <h2 class="city" id="city">-</h2>
+          <h1 class="temperature" id="temperature"><span>-</span>&deg;C</h1>
+        </div>
+
+        <div class="weather--icon">
+          <img src="" id="weather-icon" />
+        </div>
+      </div>
+      
+      <div class="air--conditions">
+        <p>CONDIÇÕES DO AR</p>
+        <div class="air--conditions--infos">
+          <div class="air--condition">
+            <div class="condition--title">
+              <i class="fa-solid fa-temperature-three-quarters"></i>
+              <p>Sensação Térmica</p>
+            </div>
+            <h2 id="real-fell"><span>-</span>&deg;C</h2>
+          </div>
+
+          <div class="air--condition">
+            <div class="condition--title">
+              <i class="fa-solid fa-wind"></i>
+              <p>Vento</p>
+            </div>
+            <h2 id="wind"><span>-</span> Km/h</h2>
+          </div>
+
+          <div class="air--condition">
+            <div class="condition--title">
+              <i class="fa-solid fa-droplet"></i>
+              <p>Umidade</p>
+            </div>
+            <h2 id="humidity"><span>-</span> %</h2>
+          </div>
+
+          <div class="air--condition">
+            <div class="condition--title">
+              <i class="fa-solid fa-cloud"></i>
+              <p>Clima</p>
+            </div>
+            <h2 id="weather-condition"><span>-</span></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
