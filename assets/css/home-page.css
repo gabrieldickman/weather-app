@@ -156,6 +156,7 @@
 }
 .condition--title p {
   font-size: 2rem;
+  margin: 0;
 }
 .air--condition h2 {
   font-size: 3.2rem;
